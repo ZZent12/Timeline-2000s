@@ -1,0 +1,37 @@
+{% extends "Events_Mid.html" %}
+
+{% block Title %}
+Survivor
+{% endblock %}
+
+{% block Last_Event %}
+<area shape="default" href="/Bush">
+{% endblock %}
+
+{% block Next_Event %}
+<area shape="default" href="/LotR">
+{% endblock %}
+
+{% block Content %}
+<div class="container-fluid">
+    <center>
+    <div class="row">
+        <div class="col">
+                <h2>The First Episode of Survivor Airs | Culture</h2>
+            <p>
+                Survivor was one of, if not the first to perfect the relaity TV show genre. 
+                With an average of 52 million viewers in the first season's finale. 
+                It is safe to say that other companies wanted a peice of the pie, 
+                and so a bunch of relaity TV game shows poped up all around. 
+                At the end of the decade RuPual's Drag Race launched lampooning the genre and ending the massive uptick of these shows
+            </p>
+        
+        </div>
+
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Survivor.jpg')}}">
+        </div>
+    </center>
+    </div>
+</div>
+{% endblock %}

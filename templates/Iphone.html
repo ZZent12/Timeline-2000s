@@ -1,0 +1,35 @@
+{% extends "Events_Mid.html" %}
+
+{% block Title %}
+IPhone
+{% endblock %}
+
+{% block Last_Event %}
+<area shape="default" href="/FBLaunch">
+{% endblock %}
+
+{% block Next_Event %}
+<area shape="default" href="/Obama">
+{% endblock %}
+
+{% block Content %}
+<div class="container-fluid">
+    <center>
+    <div class="row">
+        <div class="col">
+                <h2>The First IPhone is released | Culture</h2>
+            <p>
+                With the IPhone's release we started to move away from cell phones and into smart phones. 
+                The IPhone showed that it was practial to have more features on your phone than just text and call. 
+                I 
+            </p>
+        
+        </div>
+
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Iphone.jpg')}}">
+        </div>
+    </center>
+    </div>
+</div>
+{% endblock %}

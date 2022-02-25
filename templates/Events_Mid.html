@@ -1,0 +1,27 @@
+{% extends "Base.html" %}
+{% block Title %}{% endblock %}
+{% block Main %}
+
+{% block Content %}{% endblock %}
+<center>
+    <div class="row">
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Last Event.png')}}" usemap="#Last">
+            <map name="Last">
+                {% block Last_Event %}{% endblock %}
+            </map>
+            
+        </div>
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Next Event.png')}}" usemap="#Next">
+            <map name="Next">
+                {% block Next_Event %}{% endblock %}
+            </map>
+        </div>
+    </div>
+    <img  src="{{ url_for('static', filename='Return to Timeline.png')}}" usemap="#Return">
+    <map name="Return">
+        <area shape="default" href="/">
+    </map>
+</center>
+{% endblock %}

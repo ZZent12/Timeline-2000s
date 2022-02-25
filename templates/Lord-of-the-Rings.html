@@ -1,0 +1,34 @@
+{% extends "Events_Mid.html" %}
+
+{% block Title %}
+LotR
+{% endblock %}
+
+{% block Last_Event %}
+<area shape="default" href="/Survivor">
+{% endblock %}
+
+{% block Next_Event %}
+<area shape="default" href="/9-11">
+{% endblock %}
+
+{% block Content %}
+<div class="container-fluid">
+    <center>
+    <div class="row">
+        <div class="col">
+                <h2>Lord of the Rings Releases | Culture</h2>
+            <p>
+                The original Lord of the Rings triligy paved the way for what movies would be able to do with special effects and set peices as diffrent technology devloped such as greenscreen and CGI.
+                Lord of the Rings was a foreshadowing for the amazing effects that we would see in movies like Endgame
+            </p>
+        
+        </div>
+
+        <div class="col">
+            <img  src="{{ url_for('static', filename='LotR.jpg')}}">
+        </div>
+    </center>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "Base.html" %}
+
+{% block Title %}
+Music
+{% endblock %}
+
+{% block Main %}
+<center>
+<h2>Music</h2>
+
+<p>
+    Despite the hip hop dominance rock music was still popular, notably alternative rock, and especially genres such as post-grunge, post-Britpop, nu metal, pop punk, emo, post-hardcore, metalcore, and in some cases indie rock; the early and mid 2000s saw a resurgence in the mainstream popularity of pop rock and power pop.
+</p>
+
+<div class="container-fluid">
+    <h2>Navigation</h2>
+    <div class="row">
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Fashion_Button.png')}}" usemap="#Fashion">
+            <map name="Fashion">
+                <area shape="default" href="/Fashion">
+            </map>            
+        </div>
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Celebs_Button.png')}}" usemap="#Celebs">
+            <map name="Celebs">
+                <area shape="default" href="/Celebs">
+            </map>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+
+            <img  src="{{ url_for('static', filename='Art_Button.png')}}" usemap="#Art">
+            <map name="Art">
+                <area shape="default" href="/Art">
+            </map>            
+        </div>
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Return to Timeline.png')}}" usemap="#Return">
+            <map name="Return">
+                <area shape="default" href="/">
+            </map>            
+        </div>
+    </div>
+
+</center>
+</div>
+{% endblock %}

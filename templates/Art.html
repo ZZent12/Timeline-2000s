@@ -1,0 +1,50 @@
+{% extends "Base.html" %}
+
+{% block Title %}
+Art
+{% endblock %}
+
+{% block Main %}
+<center>
+<h2>Art</h2>
+
+<p>
+    Visitors to a sprawling 2005 exhibition at MoCAs Geffen Contemporary could never be certain if they were viewing a sober study of the historical role of mind-altering substances in artistic creation, or simply lost in an environment meant to be experienced on actual drugs. (Copy and pasted)
+    The exhibition, called Ecstasy: In and About Altered States, is a very weird experience for I have been there and many like it and I belive that this shows the style of the 2000s with its mind boggling changes in sceanery
+</p>
+
+<div class="container-fluid">
+    <h2>Navigation</h2>
+    <div class="row">
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Fashion_Button.png')}}" usemap="#Fashion">
+            <map name="Fashion">
+                <area shape="default" href="/Fashion">
+            </map>            
+        </div>
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Celebs_Button.png')}}" usemap="#Celebs">
+            <map name="Celebs">
+                <area shape="default" href="/Celebs">
+            </map>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+
+            <img  src="{{ url_for('static', filename='Return to Timeline.png')}}" usemap="#Return">
+            <map name="Return">
+                <area shape="default" href="/">
+            </map>            
+        </div>
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Music_Button.png')}}" usemap="#Music">
+            <map name="Music">
+                <area shape="default" href="/Music">
+            </map>
+        </div>
+    </div>
+
+</center>
+</div>
+{% endblock %}

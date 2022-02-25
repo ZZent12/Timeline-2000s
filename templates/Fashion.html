@@ -1,0 +1,51 @@
+{% extends "Base.html" %}
+
+{% block Title %}
+Fashion
+{% endblock %}
+
+{% block Main %}
+<center>
+<h2>Fashion</h2>
+
+<p>
+    As the decade went on, 2000s fashion began to take cues from 1960s bohemian looks. Yoga pants, low-rise jeans, cowl-neck shirts, peasant tops, capri pants, cropped jackets, and dresses over jeans were popular outfit choices for women
+    Many styles from the early and mid-2000s carried over to the latter part of the decade, with a few exceptions. For women, crop tops were replaced with camisoles and miniskirts gave way to babydoll, bubble skirt, and sweater dresses. There was also a 1980s and 1990s revival that reintroduced neon colors, animal prints, geometric shapes, light denim jeggings, and ripped acid washed jeans that were worn with gladiator sandals, ballet flats, and headbands. An oversized look started to gain popularity, but it was subtler than the traditional 80s fit.
+    Mens late 2000s fashion was a mix of 1950s and 1980s throwbacks, with letterman and black leather jackets, overcoats, slim cut jeans, Ed Hardy t-shirts, flannel shirts, and V-neck sweaters. These were often paired with dad hats, wayfarers or aviators, motorcycle boots, Converse, Vans, or sneakers. The mens power suit was also updated from the 80s to have more a slim tailored cut.
+</p>
+
+<div class="container-fluid">
+    <h2>Navigation</h2>
+    <div class="row">
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Return to Timeline.png')}}" usemap="#Return">
+            <map name="Return">
+                <area shape="default" href="/">
+            </map>            
+        </div>
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Celebs_Button.png')}}" usemap="#Celebs">
+            <map name="Celebs">
+                <area shape="default" href="/Celebs">
+            </map>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+
+            <img  src="{{ url_for('static', filename='Art_Button.png')}}" usemap="#Art">
+            <map name="Art">
+                <area shape="default" href="/Art">
+            </map>            
+        </div>
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Music_Button.png')}}" usemap="#Music">
+            <map name="Music">
+                <area shape="default" href="/Music">
+            </map>
+        </div>
+    </div>
+
+</center>
+</div>
+{% endblock %}

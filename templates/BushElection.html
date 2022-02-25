@@ -1,0 +1,44 @@
+{% extends "Base.html" %}
+
+{% block Title %}
+Bush Elected
+{% endblock %}
+
+{% block Main %}
+<div class="container-fluid">
+    <center>
+    <div class="row">
+        <div class="col">
+                <h2>Bush is elected preident | Politics</h2>
+            <p>
+                Held on Tuesday, November 7, 2000. Republican candidate George W. Bush, the governor of Texas and eldest son of the 41st president, George H. W. Bush, won the election, defeating incumbent Vice President Al Gore. It was the fourth of five American presidential elections (as of 2022), and the first since 1888, in which the winning candidate lost the popular vote, and is considered one of the closest elections in US history, with longstanding controversy surrounding the ultimate results.
+                On election night, it was unclear who had won, with the electoral votes of the state of Florida still undecided. The returns showed that Bush had won Florida by such a close margin that state law required a recount. A month-long series of legal battles led to the highly controversial 5 to 4 Supreme Court decision Bush v. Gore, which ended the recount.
+            </p>
+        
+        </div>
+
+        <div class="col">
+            <img style="width: 75%; height: 75%;" src="{{ url_for('static', filename='Election.png')}}">
+        </div>
+    </center>
+    </div>
+</div>
+
+<center>
+    <div class="row">
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Return to Timeline.png')}}" usemap="#Return">
+            <map name="Return">
+                <area shape="default" href="/">
+            </map>
+            
+        </div>
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Next Event.png')}}" usemap="#Next">
+            <map name="Next">
+                <area shape="default" href="/Survivor">
+            </map>
+        </div>
+    </div>
+</center>
+{% endblock %}

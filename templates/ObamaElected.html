@@ -1,0 +1,44 @@
+{% extends "Base.html" %}
+
+{% block Title %}
+Obama Elected
+{% endblock %}
+
+{% block Main %}
+<div class="container-fluid">
+    <center>
+    <div class="row">
+        <div class="col">
+                <h2>Obama is elected preident | Politics</h2>
+            <p>
+                Obama won a decisive victory over McCain, winning the Electoral College and the popular vote by a sizable margin, including states that had not voted for the Democratic presidential candidate since 1976 (North Carolina) and 1964 (Indiana and Virginia). Obama received the largest share of the popular vote won by a Democrat since Lyndon B. Johnson in 1964 and was the first Democrat to win an outright majority of the popular vote since Jimmy Carter in 1976. Obama's total count of 69.5 million votes stood as the largest tally ever won by a presidential candidate until 2020, when this was surpassed by both major party candidates in a high-turnout election. He was the first Democrat to win without Arkansas and Missouri since those states joined the Union in 1836 and 1821 and the first Democrat to win the presidency without winning West Virginia since 1916.
+                Obama had a lot of effects on the country and dispite the landslide election he is a very devisive president.
+            </p>
+        
+        </div>
+
+        <div class="col">
+            <img src="{{ url_for('static', filename='Obama.jpg')}}">
+        </div>
+    </center>
+    </div>
+</div>
+
+<center>
+    <div class="row">
+        <div class="col">
+
+            <img  src="{{ url_for('static', filename='Last Event.png')}}" usemap="#Next">
+            <map name="Next">
+                <area shape="default" href="/IPhone">
+            </map>            
+        </div>
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Return to Timeline.png')}}" usemap="#Return">
+            <map name="Return">
+                <area shape="default" href="/">
+            </map>
+        </div>
+    </div>
+</center>
+{% endblock %}

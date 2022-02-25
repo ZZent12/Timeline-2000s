@@ -1,0 +1,39 @@
+{% extends "Events_Mid.html" %}
+
+{% block Title %}
+9/11
+{% endblock %}
+
+{% block Last_Event %}
+<area shape="default" href="/9-11">
+{% endblock %}
+
+{% block Next_Event %}
+<area shape="default" href="FBLaunch">
+{% endblock %}
+
+{% block Content %}
+<div class="container-fluid">
+    <center>
+    <div class="row">
+        <div class="col">
+                <h2>Patroit Act is passed | Politics</h2>
+            <p>
+                45 days after 9/11 attacks congress passed the Patriot Act. 
+                This was a bill saying it was used to stop terrorist attacks by increasing surveillance on the population. 
+                After being deemed unconstitual many times the act was again on trial agianst an eariler decree. 
+                Mainly a part call section 220 which allowed the new social media companies that were growing at the time to not be liable for what their users say. 
+                After the wide spread adoption of end to end encryption (E2EE) in 2016 allowing not even the owning company to look at the data sent by its users
+                The Patriot Act was called into question again because it basically became useless and in a court case it was ruled that E2EE can not be forced to be broken by the government, 
+                although it did not stop them trying again 4 years later in 2020.
+            </p>
+        
+        </div>
+
+        <div class="col">
+            <img  src="{{ url_for('static', filename='Free Speech.png')}}">
+        </div>
+    </center>
+    </div>
+</div>
+{% endblock %}

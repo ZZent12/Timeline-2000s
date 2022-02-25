@@ -1,0 +1,35 @@
+{% extends "Base.html" %}
+
+{% block Title %}
+Navigation
+{% endblock %}
+
+{% block Main %}
+
+
+<img  src="{{ url_for('static', filename='Decade Project Timeline.png')}}" usemap="#workmap">
+
+<map name="workmap">
+    <area shape="rect" coords="4, 522, 52, 1000" href="/Bush">
+    <area shape="rect" coords="57, 932, 444, 1027" href="/Bush">
+    <area shape="rect" coords="7, 318, 78, 516" href="/Survivor">
+    <area shape="rect" coords="52, 260, 335, 320" href="/Survivor">
+    <area shape="rect" coords="130, 557, 196, 785" href="/LotR">
+    <area shape="rect" coords="109, 784, 487, 900" href="/LotR">
+    <area shape="rect" coords="159, 335, 232, 535" href="/9-11">
+    <area shape="rect" coords="262, 363, 416, 409" href="/9-11">
+    <area shape="rect" coords="192, 558, 261, 781" href="/PatAct">
+    <area shape="rect" coords="288, 607, 560, 723" href="/PatAct">
+    <area shape="rect" coords="954, 316, 1026, 536" href="/FBLaunch">
+    <area shape="rect" coords="1004, 238, 1232, 318" href="/FBLaunch">
+    <area shape="rect" coords="1522, 533, 1597, 814" href="/IPhone">
+    <area shape="rect" coords="1307, 814, 1581, 918" href="/IPhone">
+    <area shape="rect" coords="1781, 280, 1851, 559" href="/Obama">
+    <area shape="rect" coords="1507, 201, 1726, 297" href="/Obama">
+    <area shape="rect" coords="593, 833, 856, 946" href="/Fashion">
+    <area shape="rect" coords="920, 903, 1288, 941" href="/Celebs">
+    <area shape="rect" coords="670, 970, 800, 1011" href="/Art">
+    <area shape="rect" coords="1008, 968, 1212, 1007" href="/Music">
+</map>
+
+{% endblock %}
